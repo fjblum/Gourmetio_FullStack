@@ -1,0 +1,8 @@
+Hola Pablo, como andas?
+
+Para levantar el proyecto necesitás Java 11, Maven 3.6.3
+
+
+mvn clean spring-boot:run
+
+Levantá el backend en el puerto 8081
