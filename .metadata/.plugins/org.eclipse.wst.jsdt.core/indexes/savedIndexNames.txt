@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/home/cdt/Escritorio/proyectoCursoFullStack/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2248349032.index
+4051187137.index
+582955574.index
+1822539711.index
+702703477.index
+2017723603.index

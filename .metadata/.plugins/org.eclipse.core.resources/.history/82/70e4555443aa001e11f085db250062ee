@@ -1,0 +1,10 @@
+package ar.com.cdt.fullstack.dto;
+
+public class Restaurante {
+	
+	public String nombre;
+	public String direccion;
+	public String imagen;
+	public String barrio;
+
+}

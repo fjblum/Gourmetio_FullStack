@@ -1,0 +1,42 @@
+package ar.com.cdt.fullstack.service.impl;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import ar.com.cdt.fullstack.dto.Restaurante;
+import ar.com.cdt.fullstack.helpers.Barrios;
+import ar.com.cdt.fullstack.service.RestauranteService;
+
+@Service
+public class RestauranteServiceImpl implements RestauranteService {
+
+	@Override
+	public Restaurante setRestaurante(String nombre, String direccion, String rutaImagen, Barrios barrio) {
+		Restaurante restaurante = new Restaurante();
+		restaurante.setNombre(nombre);
+		restaurante.setDireccion(direccion);
+		restaurante.setImagen(rutaImagen);
+		restaurante.setBarrio(barrio);
+		return restaurante;
+	}
+
+	@Override
+	public List<Restaurante> getAllRestaurantes() {
+		List<Restaurante> restaurantes = new ArrayList<Restaurante>();
+		
+		Restaurante resto1 = setRestaurante("El resto de Pablo", "Calle falsa 123, Flores", "restos/image1.png", Barrios.FLORES);
+		Restaurante resto2 = setRestaurante("Felsch Cafe", "Calle falsa 123, Flores", "restos/image1.png", Barrios.FLORES);
+		Restaurante resto3 = setRestaurante("Julian Pollo al verdeo", "Calle falsa 123, Flores", "restos/image1.png", Barrios.FLORES);
+		
+		restaurantes.add(resto1);
+		restaurantes.add(resto2);
+		restaurantes.add(resto3);
+		
+		
+		return restaurantes;
+	}
+
+
+}

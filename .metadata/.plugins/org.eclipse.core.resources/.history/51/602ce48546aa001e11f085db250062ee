@@ -1,0 +1,15 @@
+package ar.com.cdt.fullstack.service.impl;
+
+import ar.com.cdt.fullstack.dto.Restaurante;
+import ar.com.cdt.fullstack.service.RestauranteService;
+
+public class RestauranteServiceImpl implements RestauranteService {
+
+	@Override
+	public Restaurante setRestaurante() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+}

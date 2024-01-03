@@ -1,0 +1,9 @@
+package ar.com.cdt.fullstack.service;
+
+import ar.com.cdt.fullstack.dto.Restaurante;
+
+public interface RestauranteService {
+	
+	public Restaurante setRestaurante();
+
+}

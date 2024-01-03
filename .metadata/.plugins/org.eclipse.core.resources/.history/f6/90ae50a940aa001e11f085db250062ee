@@ -1,0 +1,9 @@
+package ar.com.cdt.fullstack.controller;
+
+public class HealthCheckController {
+	
+	public String ping() {
+		return "OK";
+	};
+
+}

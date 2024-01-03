@@ -1,0 +1,5 @@
+package ar.com.cdt.fullstack.service.impl;
+
+public class RestauranteServiceImpl {
+
+}

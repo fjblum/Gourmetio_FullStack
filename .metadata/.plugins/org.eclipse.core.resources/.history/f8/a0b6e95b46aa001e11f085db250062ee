@@ -1,0 +1,54 @@
+package ar.com.cdt.fullstack.dto;
+
+public class Restaurante {
+
+	public String nombre;
+	public String direccion;
+	public String imagen;
+	public String barrio;
+
+	public Restaurante() {
+		super();
+	}
+
+	public Restaurante(String nombre, String direccion, String imagen, String barrio) {
+		super();
+		this.nombre = nombre;
+		this.direccion = direccion;
+		this.imagen = imagen;
+		this.barrio = barrio;
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getDireccion() {
+		return direccion;
+	}
+
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
+	}
+
+	public String getImagen() {
+		return imagen;
+	}
+
+	public void setImagen(String imagen) {
+		this.imagen = imagen;
+	}
+
+	public String getBarrio() {
+		return barrio;
+	}
+
+	public void setBarrio(String barrio) {
+		this.barrio = barrio;
+	}
+
+}

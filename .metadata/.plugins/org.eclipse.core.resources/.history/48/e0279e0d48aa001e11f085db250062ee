@@ -1,0 +1,26 @@
+package ar.com.cdt.fullstack.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
+
+import ar.com.cdt.fullstack.dto.Restaurante;
+import ar.com.cdt.fullstack.service.RestauranteService;
+
+@RestController
+@RequestMapping("/restaurante")
+@CrossOrigin(origins = "*")
+public class RestauranteController {
+	
+	@Autowired
+	RestauranteService restauranteservice;
+	
+	@RequestMapping(method = RequestMethod.GET, value = "/test")
+	public Restaurante traerRestoGlobal() {
+		Restaurante resto = restauranteservice.setRestaurante();
+		return resto;
+	};
+
+}

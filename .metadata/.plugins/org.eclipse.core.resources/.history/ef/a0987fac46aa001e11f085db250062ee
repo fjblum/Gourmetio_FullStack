@@ -1,0 +1,20 @@
+package ar.com.cdt.fullstack.service.impl;
+
+import ar.com.cdt.fullstack.dto.Restaurante;
+import ar.com.cdt.fullstack.helpers.Barrios;
+import ar.com.cdt.fullstack.service.RestauranteService;
+
+public class RestauranteServiceImpl implements RestauranteService {
+
+	@Override
+	public Restaurante setRestaurante() {
+		Restaurante restaurante = new Restaurante();
+		restaurante.setNombre("El pela");
+		restaurante.setDireccion("La casa del pela");
+		restaurante.setImagen("/image.jpg");
+		restaurante.setBarrio(Barrios.FLORES);
+		return restaurante;
+	}
+
+
+}

@@ -1,0 +1,5 @@
+package ar.com.cdt.fullstack.service;
+
+public interface RestauranteService {
+
+}

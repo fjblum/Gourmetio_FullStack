@@ -1,0 +1,5 @@
+package ar.com.cdt.fullstack.dto;
+
+public class Restaurante {
+
+}
